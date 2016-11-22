@@ -115,7 +115,15 @@ a{
 	font-weight: 800;
 	text-align: -webkit-center;
     font-size: 100px;
-    padding: 1%;
+    padding-top: 1%;
+}
+
+#portfolio{
+	color: white;
+}
+
+#title:hover{
+	color: #977E90;
 }
 
 #title-of-project1{
@@ -124,7 +132,8 @@ a{
 	font-weight: 800;
 	text-align: left;
 	font-size: 100px;
-	padding-top: 1%;
+	/*padding-top: 1%; */
+	padding-bottom: 0.5%;
 	padding-left: 3%;
 }
 
@@ -147,12 +156,41 @@ a{
 #aboutme-section{
 	background-color: #DFD2C0;
 }
+
+#myself-img{
+	height: auto;
+    width: auto;
+    max-width: 350px;
+    max-height: 350px;
+    position: absolute;
+    left: 15%;
+}
 #portfolio-section1{
 	background-color: #A69DAC;
 }
 
+.bakery{
+	height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    display: block;
+    padding-left: 7%;
+    padding-bottom: 1%;
+}
+
 #portfolio-section2{
 	background-color: #F7F2E0;
+}
+
+#season-img {
+    height: auto;
+    width: auto;
+    max-width: 700px;
+    max-height: 700px;
+    position: absolute;
+    right: 5%;
+    top: 35%;
 }
 
 #contact-section{

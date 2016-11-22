@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  
+
+/*
 $('#sidebar-button').click(function() {
   if ($("#sidebar-button").hasClass("button-active")) {
     $('body').removeClass('no-scroll');
@@ -25,7 +28,7 @@ $('.page-wrapper').click(function(){
     $('.page-wrapper').removeClass('wrapper-active');
   }
 });
-
+*/
 
 
 });
