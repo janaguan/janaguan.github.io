@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
+       	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
 		<script src = "assets/js/script.js"></script>
 	</head>
 	<body>
-		hello internet dsaknsalka
+		<!-- Sidebar Hamburger Icon -->
+		<!-- <div id = "sidbar-button">
+			<a id = "nav-toggle">
+				<span></span>
+			</a>
+		</div> -->
+
+		<!-- Sidebar -->
+		<nav class = "sidebar-container">
+			<ul>
+				<li class = "sidebar-item"> Home </li>
+				<li class = "sidebar-item"> About Me </li>
+				<li class = "sidebar-item"> Portfolio
+					<ul>
+						<li class = "portfolio item" id = "title"> Title </li>
+						<li class = "portfolio item" id = "title"> Title </li>
+					</ul>
+				</li>
+				<li class = "sidebar-item"> Contact </li>
+			</ul>
+		</nav>
+
+		<!-- Page Wrapper, Consisting of all the sections -->
+		<div class = "page-wrapper">
+			<!-- Home section -->
+			<section class = "section" id = "home-section">
+			</section>
+			<!-- About Me section -->
+			<section class = "section" id = "aboutme-section">
+				<div class = "information"> About Me </div>
+			</section>
+			<!-- Portfolio section -->
+			<section class = "section" id = "portfolio-section1">
+				<div class = "project" id = "title-of-project1">
+					Title
+				</div>
+			</section>
+			<section class = "section" id = "portfolio-section2">
+				<div class = "project" id = "title-of-project2">
+					Title
+				</div>
+			</section>
+			<!-- Contact section -->
+			<section class = "section" id = "contact-section">
+				<div class = "information"> Contact Me </div>
+			</section>
+		</div>
 	</body>
 </html>
