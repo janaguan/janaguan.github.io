@@ -1,54 +1,10 @@
-/*#sidebar-button {
-	position: fixed;
-	z-index: 100;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-} */
-
+/*custom fonts */
 @font-face {
-	font-family: "Notera Personal Use Only";
-	src: url("Notera.ttf") format("truetype");
+	font-family: "Notera";
+	src: url("assets/css/Notera.ttf") format("truetype");
 }
 
-
-.sidebar-container{
-	position: fixed;
-	width: 280px;
-	height: 100%;
-	background-color: #5c5c5c;
-	z-index: 2;
-	opacity: 0.9;
-	/*-webkit-transform: translateX(-280px);
-	-webkit-transition: all 0.3s;*/
-}
-
-.sidebar-container ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	margin-top: 10px;
-}
-
-.sidebar-item{
-	font-weight: 700;
-	font-size: 25px;
-	color: white;
-	padding: 15px 20px 15px 20px;
-}
-
-.sidebar-item:hover{
-	color: #977E90;
-}
-
-#title{
-	font-size: 20px;
-}
-
+/*body, html changes */
 body, html{
 	margin: 0 auto;
 	width: 100%;
@@ -65,9 +21,47 @@ a{
 	text-decoration: none;
 }
 
-/* #nav-toggle { 
+/* Sidebar container and the things in it */
+.sidebar-container{
+	position: fixed;
+	width: 280px;
+	height: 100%;
+	background-color: #5c5c5c;
+	z-index: 2;
+	opacity: 0.9;
+	-webkit-transform: translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-item{
+	font-weight: 700;
+	font-size: 25px;
+	color: white;
+	padding: 15px 20px 15px 20px;
+}
+
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.sidebar-item:hover{
+	color: #977E90;
+}
+
+#title{
+	font-size: 20px;
+	padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+/* nav bar button */
+#nav-toggle { 
 	position: absolute; 
 	left: 50%; top: 50%; 
+	z-index: 10;
 }
 
 #nav-toggle {
@@ -89,8 +83,21 @@ a{
 
 #nav-toggle span:after {
 	bottom: -10px;
-} */
+}
 
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+/* page wrapper (entire thing) */
 .page-wrapper {
 	height: 100%;
 	width: 100%;
@@ -104,11 +111,7 @@ a{
 	height: 500px;
 	position: relative;
 }
-
-.project{
-
-}
-
+/* home and contact section */
 .information{
 	font-family: "Notera Personal Use Only";
 	color: white;
@@ -118,12 +121,60 @@ a{
     padding-top: 1%;
 }
 
+#contact-section{
+	height: 400px;
+	background-color: #977E90;
+}
+
+.home-section{
+	width: 100%;
+	height: 700px;
+	position: relative;
+	background-color: #977E90;
+}
+
+#name{
+	font-family: "Notera Personal Use Only";
+	text-align: -webkit-center;
+	font-weight: 800;
+	color: white;
+	font-size: 200px;
+	padding: 15%;
+}
+
+#aboutme-section{
+	background-color: #DFD2C0;
+}
+
+#myself-img{
+	height: auto;
+    width: auto;
+    max-width: 350px;
+    max-height: 350px;
+    position: absolute;
+    left: 15%;
+}
+
+.myself{
+	float: left;
+}
+/*portfolio section */
 #portfolio{
 	color: white;
 }
 
+p{
+	color: white;
+	text-shadow: 1px gray;
+}
+
 #title:hover{
 	color: #977E90;
+}
+
+/*Bakery portfolio */
+#portfolio-section1{
+	background-color: #A69DAC;
 }
 
 #title-of-project1{
@@ -137,38 +188,6 @@ a{
 	padding-left: 3%;
 }
 
-#title-of-project2{
-	font-family: "Notera Personal Use Only";
-	color: #5c5c5c;
-	font-weight: 800;
-	text-align: right;
-	font-size: 100px;
-	padding-top: 1%;
-	padding-right: 3%;
-}
-
-#home-section{
-	width: 100%;
-	height: 700px;
-	position: relative;
-	background-color: #977E90;
-}
-#aboutme-section{
-	background-color: #DFD2C0;
-}
-
-#myself-img{
-	height: auto;
-    width: auto;
-    max-width: 350px;
-    max-height: 350px;
-    position: absolute;
-    left: 15%;
-}
-#portfolio-section1{
-	background-color: #A69DAC;
-}
-
 .bakery{
 	height: auto; 
     width: auto; 
@@ -179,23 +198,91 @@ a{
     padding-bottom: 1%;
 }
 
+.bakery:hover{
+	cursor: pointer;
+}
+
+/*seasons section*/
 #portfolio-section2{
 	background-color: #F7F2E0;
 }
 
-#season-img {
-    height: auto;
-    width: auto;
-    max-width: 700px;
-    max-height: 700px;
-    position: absolute;
-    right: 5%;
-    top: 35%;
+#title-of-project2{
+	font-family: "Notera Personal Use Only";
+	color: #5c5c5c;
+	font-weight: 800;
+	text-align: right;
+	font-size: 100px;
+	padding-top: 1%;
+	padding-right: 3%;
 }
 
-#contact-section{
-	background-color: #977E90;
+#season-img {
+	float: right;
+    max-width: 800px;
+    max-height: 750px;
+    padding-top: 7%;
+    padding-right: 2%;
 }
+
+#season-img:hover{
+	cursor: pointer;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+}
+
+#close {
+	position: fixed;
+	width: 20px;
+	top: 20px;
+	right: 20px;
+}
+
+#close:hover {
+	cursor: pointer;
+}
+
+.bakery-pic-click {
+	position: fixed;
+	z-index: 21;
+	width: 80%;
+	top: 7%;
+	left: 5%;
+}
+
+.season-pic-click {
+	position: fixed;
+	z-index: 21;
+	width: 80%;
+	top: 30%;
+	left: 12%;
+}
+
+.display{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.height-width{
+	max-height: none;
+	max-width: none;
+}
+
+.pic-click:hover {
+	cursor: default;
+}
+
+/* jQuery Manipulation Classes */
 
 .no-scroll {
 	overflow: hidden;
@@ -207,9 +294,8 @@ a{
 	transform: translateX(280px);
 }
 
-/* .sidebar-active {
+.sidebar-active {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	-o-transform: translateX(0px);
-} */
-
+}

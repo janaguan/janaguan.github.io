@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-       	<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script> 
@@ -12,54 +10,69 @@
 	</head>
 	<body>
 		<!-- Sidebar Hamburger Icon -->
-		<!-- <div id = "sidbar-button">
-			<a id = "nav-toggle">
-				<span></span>
-			</a>
-		</div> -->
-
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
+        </div>
 		<!-- Sidebar -->
 		<nav class = "sidebar-container">
 			<ul>
-				<li class = "sidebar-item"> Home </li>
-				<li class = "sidebar-item"> About Me </li>
+				<a href = "#name">
+					<li class = "sidebar-item" id = "home"> Home </li>
+				</a>
+				<a href = "#aboutme-section">
+					<li class = "sidebar-item" id = "about-me"> About Me </li>
+				</a>
 				<li class = "sidebar-item" id = "portfolio"> Portfolio
 					<ul>
-						<li class = "portfolio item" id = "title"> Title </li>
-						<li class = "portfolio item" id = "title"> Title </li>
+						<a href = "#portfolio-section1">
+							<li class = "portfolio-item" id = "title"> Flour Shower </li>
+						</a>
+						<a href = "#portfolio-section2">
+							<li class = "portfolio-item" id = "title"> Seasons </li>
+						</a>
 					</ul>
 				</li>
-				<li class = "sidebar-item"> Contact </li>
+				<a href = "#contact-section">
+					<li class = "sidebar-item" id = "contact"> Hit Me Up! </li>
+				</a>
 			</ul>
 		</nav>
-
-		<!-- Page Wrapper, Consisting of all the sections -->
-		<div class = "page-wrapper">
-			<!-- Home section -->
-			<section class = "section" id = "home-section">
+	<div id="overlay">
+		<img class="button" id="close" src="assets/img/close.png">
+	</div>
+	<!-- Page wrapper, consisting of all the sections -->
+	<div class = "page-wrapper">
+		<!-- Home Section -->
+		<section class = "home-section">
+				<div id = "name"> Jana Guan </div>
 			</section>
-			<!-- About Me section -->
-			<section class = "section" id = "aboutme-section">
-				<div class = "information"> About Me </div>
-				<img class = "myself" id = "myself-img" src = "assets/img/jana.png">
-			</section>
-			<!-- Portfolio section -->
-			<section class = "section" id = "portfolio-section1">
-				<div class = "project" id = "title-of-project1">
-					Flour Shower
-				</div>
-				<img class = "bakery" id = "front-page" src = "assets/img/BC_03_Bakery_Front.png">
-				<img class = "bakery" id = "back-page" src = "assets/img/BC_03_Bakery_Back.png">
-			</section>
-			<section class = "section" id = "portfolio-section2">
-				<div class = "project" id = "title-of-project2">
-					Seasons
-				</div>
-				<img class = "season" id = "season-img" src = "assets/img/Season.png">
-			</section>
-			<!-- Contact section -->
+		<!-- About Me section -->
+		<section class = "section" id = "aboutme-section">
+			<div class = "information"> About Me </div>
+			<div class = "myself">
+				<img id = "myself-img" src = "assets/img/jana.png">
+				<p> Hi! My name is Jana Guan and I am a 3rd year student at UC Berkeley. I major in Cognitive Science and I love it! I get to learn about the human mind through different lens such as Computer Science, Neuroscience, Philosphy, and more-- it's amazing to see just how broad the human mind is! In my spare time, I love designing, doing calligraphy, reading, traveling, and playing volleyball! I hope that you enjoy my projects and I would love to talk-- whether it would be about volleyball, my projects, etc.-- it would nice be able to get to know you! </p>
+			</div>
+		</section>
+		<!-- Portfolio section -->
+		<section class = "section" id = "portfolio-section1">
+			<div class = "project" id = "title-of-project1">
+			Flour Shower
+			</div>
+			<img class = "bakery" id = "front-page" src = "assets/img/BC_03_Bakery_Front.png">
+			<img class = "bakery" id = "back-page" src = "assets/img/BC_03_Bakery_Back.png">"
+		</section>
+		<!-- 2nd artwork -->
+		<section class = "section" id = "portfolio-section2">
+			<div class = "project" id = "title-of-project2">					Seasons
+			</div>
+			<img class = "project" id = "season-img" src = "assets/img/Season.png">
+		</section>
+		<!-- Contact section -->
 			<section class = "section" id = "contact-section">
-				<div class = "information"> Contact Me </div>
+				<div class = "information"> Hit Me Up! </div>
 			</section>
 		</div>
 	</body>
