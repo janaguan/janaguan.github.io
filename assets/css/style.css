@@ -146,20 +146,19 @@ a{
 	background-color: #DFD2C0;
 }
 
+.myself {
+	float: left;
+}
+
 #myself-img{
 	height: auto;
     width: auto;
     max-width: 350px;
     max-height: 350px;
-    position: absolute;
     left: 15%;
 }
-
-.myself{
-	float: left;
-}
 /*portfolio section */
-#portfolio{
+#portfolio-item{
 	color: white;
 }
 
