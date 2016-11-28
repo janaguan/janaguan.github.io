@@ -59,6 +59,7 @@ $("#overlay").click(function() {
     $("#season-img").css("max-height", "750px")
   });
 
+/* for moving to different sections and closing side nav */
 $("a").click(function(){
   $('body').removeClass('no-scroll');
   $("html, body").animate({

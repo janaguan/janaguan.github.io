@@ -1,9 +1,3 @@
-/*custom fonts */
-@font-face {
-	font-family: "Notera";
-	src: url("assets/css/Notera.ttf") format("truetype");
-}
-
 /*body, html changes */
 body, html{
 	margin: 0 auto;
@@ -52,6 +46,7 @@ a{
 }
 
 #title{
+	color: white;
 	font-size: 20px;
 	padding-left: 10%;
     padding-bottom: 2%;
@@ -113,9 +108,9 @@ a{
 }
 /* home and contact section */
 .information{
-	font-family: "Notera Personal Use Only";
+	font-family: 'Arizonia', cursive;
 	color: white;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: -webkit-center;
     font-size: 100px;
     padding-top: 1%;
@@ -134,9 +129,9 @@ a{
 }
 
 #name{
-	font-family: "Notera Personal Use Only";
+	font-family: 'Arizonia', cursive;
 	text-align: -webkit-center;
-	font-weight: 800;
+	font-weight: 500;
 	color: white;
 	font-size: 200px;
 	padding: 15%;
@@ -148,6 +143,15 @@ a{
 
 .myself {
 	float: left;
+	width: 600px;
+}
+
+#blurb{
+	color: #5c5c5c;
+	text-align: left;
+	padding-left: 1%;
+	padding-top: 3%;
+	line-height: 2;
 }
 
 #myself-img{
@@ -155,7 +159,9 @@ a{
     width: auto;
     max-width: 350px;
     max-height: 350px;
-    left: 15%;
+    margin-left: 25%;
+    padding-top: 2%;
+    border-radius: 30px;
 }
 /*portfolio section */
 #portfolio-item{
@@ -177,15 +183,25 @@ p{
 }
 
 #title-of-project1{
-	font-family: "Notera Personal Use Only";
+	font-family: 'Arizonia', cursive;
 	color: white;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: left;
 	font-size: 100px;
 	/*padding-top: 1%; */
 	padding-bottom: 0.5%;
 	padding-left: 3%;
 }
+
+/*#page{
+	height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    display: block;
+    padding-left: 7%;
+    padding-bottom: 1%;
+}*/
 
 .bakery{
 	height: auto; 
@@ -201,15 +217,21 @@ p{
 	cursor: pointer;
 }
 
+#bakery-blurb{
+	color: white;
+	padding-left: 35%;
+	padding-bottom: 35%;
+}
+
 /*seasons section*/
 #portfolio-section2{
 	background-color: #F7F2E0;
 }
 
 #title-of-project2{
-	font-family: "Notera Personal Use Only";
+	font-family: 'Arizonia', cursive;
 	color: #5c5c5c;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: right;
 	font-size: 100px;
 	padding-top: 1%;
@@ -266,11 +288,11 @@ p{
 	left: 12%;
 }
 
-.display{
+/*.display{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 .height-width{
 	max-height: none;
