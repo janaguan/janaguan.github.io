@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<!-- google font -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -10,6 +11,7 @@
 		<script src = "assets/js/script.js"></script>
 	</head>
 	<body>
+		<div id = "container">
 		<!-- Sidebar Hamburger Icon -->
         <div id = "sidebar-button">
             <a id="nav-toggle">
@@ -20,12 +22,12 @@
 		<nav class = "sidebar-container">
 			<ul>
 				<a href = "#name">
-					<li class = "sidebar-item" id = "home"> Home </li>
+					<li class = "sidebar-item" id = "home"> HOME </li>
 				</a>
 				<a href = "#aboutme-section">
-					<li class = "sidebar-item" id = "about-me"> About Me </li>
+					<li class = "sidebar-item" id = "about-me"> ABOUT ME </li>
 				</a>
-				<li class = "sidebar-item" id = "portfolio"> Portfolio
+				<li class = "sidebar-item" id = "portfolio"> PROJECTS
 					<ul>
 						<a href = "#portfolio-section1">
 							<li class = "portfolio-item" id = "title"> Flour Shower </li>
@@ -36,7 +38,7 @@
 					</ul>
 				</li>
 				<a href = "#contact-section">
-					<li class = "sidebar-item" id = "contact"> Let's Chat! </li>
+					<li class = "sidebar-item" id = "contact"> LET'S CHAT! </li>
 				</a>
 			</ul>
 		</nav>
@@ -63,21 +65,36 @@
 			Flour Shower
 			</div>
 			<img class = "bakery" id = "page" src = "assets/img/BC_03_Bakery_Front.png">
-			<img class = "bakery" id = "page" src = "assets/img/BC_03_Bakery_Back.png">"
+			<img class = "bakery" id = "page" src = "assets/img/BC_03_Bakery_Back.png">
 			<div class = "bakery" id = "bakery-blurb">
-			Visual Studies 185X Project: Business Cards
-			We were asked to create business cards for our dream jobs. I would love to open a bakery! If only I could actually bake.... </div>
+			For this project, we were asked to create business cards for our careers we would love to pursue if we were given the chance. The first thing that came to mind was a bakery because they always looked so cool in movies! I wanted to give the card a old-fashion, home-made kind of feel and eventually created to this card as I sketched what came to mind in a bakery.
+				<div class = "bakery" id = "bakery-descrip">
+					<i> Class: Visual Studies 185X (Word and Image) </i>
+				</div>
+					<div id = "bakery-descrip"> <i> Created: Summer 2016 </i> </div>
+			</div>
 		</section>
 		<!-- 2nd artwork -->
 		<section class = "section" id = "portfolio-section2">
 			<div class = "project" id = "title-of-project2">					Seasons
 			</div>
 			<img class = "project" id = "season-img" src = "assets/img/Season.png">
+			<div class = "project" id = "season-blurb">
+				We were asked to create an abstract art piece that showed a time sequence. Personally, abstract art is a strange concept to me but this project was engaging because the idea of time allowed to be more concrete. Hopefully, someday I can experience all four seasons, not just the two that are in California.
+				<div class = "project" id = "season-descrip">
+					<i> Class: Visual Studies 185X (Word and Image) </i>
+				</div>
+					<div id = "season-descrip"> <i> Created: Summer 2016 </i> </div>
+			</div>
 		</section>
 		<!-- Contact section -->
 			<section class = "section" id = "contact-section">
-				<div class = "information"> Let's Chat! </div>
+				<div class = "information" id = "chat"> Let's Chat! </div>
+				<div class = "contact-link"> Email:  jana.guan@yahoo.com </div>
+				<div class = "contact-link"> LinkedIn:  linkedin.com/janaguan </div>
+				<div class = "contact-link"> Phone:  (559) 287 - 3160 </div>
 			</section>
+		</div>
 		</div>
 	</body>
 </html>

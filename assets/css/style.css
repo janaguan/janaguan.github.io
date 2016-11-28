@@ -9,6 +9,7 @@ body, html{
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	font-family: 'Heebo', sans-serif;
+	background-color: #4B5354;
 }
 
 a{
@@ -20,7 +21,7 @@ a{
 	position: fixed;
 	width: 280px;
 	height: 100%;
-	background-color: #5c5c5c;
+	background-color: #4B5354;
 	z-index: 2;
 	opacity: 0.9;
 	-webkit-transform: translateX(-280px);
@@ -28,9 +29,9 @@ a{
 }
 
 .sidebar-item{
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 25px;
-	color: white;
+	color: #F3F4E5;
 	padding: 15px 20px 15px 20px;
 }
 
@@ -42,14 +43,14 @@ a{
 }
 
 .sidebar-item:hover{
-	color: #977E90;
+	color: #A1C1BE;
 }
 
 #title{
-	color: white;
 	font-size: 20px;
 	padding-left: 10%;
     padding-bottom: 2%;
+    color: #ffffff;
 }
 
 /* nav bar button */
@@ -109,36 +110,31 @@ a{
 /* home and contact section */
 .information{
 	font-family: 'Arizonia', cursive;
-	color: white;
+	color: #4B5354;
 	font-weight: 500;
 	text-align: -webkit-center;
     font-size: 100px;
     padding-top: 1%;
 }
 
-#contact-section{
-	height: 400px;
-	background-color: #977E90;
-}
-
 .home-section{
 	width: 100%;
 	height: 700px;
 	position: relative;
-	background-color: #977E90;
+	background-color: #A1C1BE;
 }
 
 #name{
 	font-family: 'Arizonia', cursive;
 	text-align: -webkit-center;
 	font-weight: 500;
-	color: white;
+	color: #ffffff;
 	font-size: 200px;
 	padding: 15%;
 }
 
 #aboutme-section{
-	background-color: #DFD2C0;
+	background-color: #F3F4E5;
 }
 
 .myself {
@@ -147,7 +143,7 @@ a{
 }
 
 #blurb{
-	color: #5c5c5c;
+	color: #4B5354;
 	text-align: left;
 	padding-left: 1%;
 	padding-top: 3%;
@@ -174,41 +170,33 @@ p{
 }
 
 #title:hover{
-	color: #977E90;
+	color: #A1C1BE;
 }
 
 /*Bakery portfolio */
 #portfolio-section1{
-	background-color: #A69DAC;
+	background-color: #4B5354;
 }
 
 #title-of-project1{
 	font-family: 'Arizonia', cursive;
-	color: white;
+	color: #F3F4E5;
 	font-weight: 500;
-	text-align: left;
+	text-align: center;
 	font-size: 100px;
-	/*padding-top: 1%; */
-	padding-bottom: 0.5%;
 	padding-left: 3%;
 }
 
-/*#page{
-	height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
-    display: block;
-    padding-left: 7%;
-    padding-bottom: 1%;
-}*/
+#page{
+	float: left;
+	clear: left;
+}
 
 .bakery{
 	height: auto; 
     width: auto; 
     max-width: 300px; 
     max-height: 300px;
-    display: block;
     padding-left: 7%;
     padding-bottom: 1%;
 }
@@ -217,22 +205,35 @@ p{
 	cursor: pointer;
 }
 
+#bakery-descrip{
+	padding-left: 0%;
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 700px;
+	line-height: 0.5;
+	margin-top: 2%;
+}
+
 #bakery-blurb{
-	color: white;
+	color: #F3F4E5;
+	font-weight: 600;
+	padding-top: 3%;
 	padding-left: 35%;
 	padding-bottom: 35%;
+	max-width: 700px;
+	line-height: 2;
 }
 
 /*seasons section*/
 #portfolio-section2{
-	background-color: #F7F2E0;
+	background-color: #F3F4E5;
 }
 
 #title-of-project2{
 	font-family: 'Arizonia', cursive;
-	color: #5c5c5c;
+	color: #4B5354;
 	font-weight: 500;
-	text-align: right;
+	text-align: center;
 	font-size: 100px;
 	padding-top: 1%;
 	padding-right: 3%;
@@ -240,6 +241,7 @@ p{
 
 #season-img {
 	float: right;
+	clear: right;
     max-width: 800px;
     max-height: 750px;
     padding-top: 7%;
@@ -248,6 +250,21 @@ p{
 
 #season-img:hover{
 	cursor: pointer;
+}
+
+#season-blurb{
+	color: #4B5354;
+	padding-left: 5%;
+	padding-top: 2%; 
+	max-width: 500px;
+	line-height: 1.9;
+}
+
+#season-descrip{
+	padding-left: 0%;
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 500px;
 }
 
 #overlay {
@@ -260,6 +277,8 @@ p{
 	left: 0px;
 	z-index: 20;
 }
+
+/*picture enlargement*/
 
 #close {
 	position: fixed;
@@ -288,11 +307,30 @@ p{
 	left: 12%;
 }
 
-/*.display{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}*/
+/*chat section */
+#contact-section{
+	background-color: #4B5354;
+	height: 300px;
+}
+
+#chat{
+	color: #F3F4E5;
+}
+
+.contact-link{
+	color: #F3F4E5;
+	float: left;
+	padding: 3%;
+	margin-right: 1%;
+	margin-left: 9%;
+	font-weight: 800;
+	font-size: 15px;
+}
+
+.contact-link:hover{
+	cursor: pointer;
+	color: #A1C1BE;
+}
 
 .height-width{
 	max-height: none;
