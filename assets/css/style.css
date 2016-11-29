@@ -26,7 +26,10 @@ a{
 	opacity: 0.9;
 	-webkit-transform: translateX(-280px);
 	-webkit-transition: all 0.3s;
+	-moz-transform: translateX(-280px);
+	-moz-transition: all 0.3s;
 }
+
 
 .sidebar-item{
 	font-weight: 500;
@@ -44,6 +47,7 @@ a{
 
 .sidebar-item:hover{
 	color: #A1C1BE;
+	transition: 0.2s;
 }
 
 #title{
@@ -54,17 +58,17 @@ a{
 }
 
 /* nav bar button */
-#nav-toggle { 
+#nav-mover { 
 	position: absolute; 
 	left: 50%; top: 50%; 
 	z-index: 10;
 }
 
-#nav-toggle {
+#nav-mover {
 	padding: 10px 30px 15px 0px; 
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+#nav-mover span, #nav-mover span:before, #nav-mover span:after {
 	height: 3px;
 	width: 30px;
 	background: #fff;
@@ -73,11 +77,11 @@ a{
 	content: '';
 }
 
-#nav-toggle span:before {
+#nav-mover span:before {
 	top: -10px; 
 }
 
-#nav-toggle span:after {
+#nav-mover span:after {
 	bottom: -10px;
 }
 
@@ -114,12 +118,11 @@ a{
 	font-weight: 500;
 	text-align: -webkit-center;
     font-size: 100px;
-    padding-top: 1%;
 }
 
 .home-section{
 	width: 100%;
-	height: 700px;
+	height: 600px;
 	position: relative;
 	background-color: #A1C1BE;
 }
@@ -130,7 +133,8 @@ a{
 	font-weight: 500;
 	color: #ffffff;
 	font-size: 200px;
-	padding: 15%;
+	padding: 11%;
+	padding-left: 15%;
 }
 
 #aboutme-section{
@@ -144,9 +148,8 @@ a{
 
 #blurb{
 	color: #4B5354;
-	text-align: left;
-	padding-left: 1%;
-	padding-top: 3%;
+	text-align: center;
+	padding-left: 6%;
 	line-height: 2;
 }
 
@@ -155,8 +158,8 @@ a{
     width: auto;
     max-width: 350px;
     max-height: 350px;
-    margin-left: 25%;
-    padding-top: 2%;
+    margin-left: 30%;
+    margin-top: 17%;
     border-radius: 30px;
 }
 /*portfolio section */
@@ -182,22 +185,17 @@ p{
 	font-family: 'Arizonia', cursive;
 	color: #F3F4E5;
 	font-weight: 500;
-	text-align: center;
+	text-align: left;
 	font-size: 100px;
-	padding-left: 3%;
-}
-
-#page{
-	float: left;
-	clear: left;
+	padding-left: 11%;
 }
 
 .bakery{
 	height: auto; 
     width: auto; 
-    max-width: 300px; 
+    max-width: 330px; 
     max-height: 300px;
-    padding-left: 7%;
+    padding-left: 10%;
     padding-bottom: 1%;
 }
 
@@ -217,11 +215,20 @@ p{
 #bakery-blurb{
 	color: #F3F4E5;
 	font-weight: 600;
-	padding-top: 3%;
-	padding-left: 35%;
-	padding-bottom: 35%;
-	max-width: 700px;
+	float: left;
+	max-width: 650px;
 	line-height: 2;
+	text-align: center;
+}
+
+#front-page{
+	padding-top: 4%;
+    padding-left: 7%;
+    padding-bottom: 1%;
+}
+
+#back-page{
+	padding-left: 13%;
 }
 
 /*seasons section*/
@@ -233,19 +240,31 @@ p{
 	font-family: 'Arizonia', cursive;
 	color: #4B5354;
 	font-weight: 500;
-	text-align: center;
+	text-align: right;
 	font-size: 100px;
-	padding-top: 1%;
-	padding-right: 3%;
+	padding-top: 2%;
+	padding-right: 20%;
+}
+
+.small-ver{
+	margin-left: 2.5%;
+
+}
+#snippet{
+	max-width: 100px;
+	max-height: 100px;
+	float:left;
+	padding-left: 1%;
+	padding-top: 10%;
 }
 
 #season-img {
-	float: right;
-	clear: right;
+	float: left;
+	clear: left;
     max-width: 800px;
     max-height: 750px;
-    padding-top: 7%;
-    padding-right: 2%;
+    padding-top: 4%;
+    padding-left: 3%;
 }
 
 #season-img:hover{
@@ -255,9 +274,10 @@ p{
 #season-blurb{
 	color: #4B5354;
 	padding-left: 5%;
-	padding-top: 2%; 
 	max-width: 500px;
 	line-height: 1.9;
+	padding-left: 62%;
+	text-align: center;
 }
 
 #season-descrip{
@@ -307,6 +327,14 @@ p{
 	left: 12%;
 }
 
+.small-ver-pic-click{
+	position: fixed;
+	z-index: 21;
+	width: 80%;
+	top: 7%;
+	left: 5%;
+}
+
 /*chat section */
 #contact-section{
 	background-color: #4B5354;
@@ -328,8 +356,8 @@ p{
 }
 
 .contact-link:hover{
-	cursor: pointer;
 	color: #A1C1BE;
+	transition: 0.2s;
 }
 
 .height-width{
@@ -341,7 +369,7 @@ p{
 	cursor: default;
 }
 
-/* jQuery Manipulation Classes */
+/* jQuery */
 
 .no-scroll {
 	overflow: hidden;

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
 $('#sidebar-button').click(function() {
   if ($("#sidebar-button").hasClass("button-active")) {
@@ -16,8 +17,6 @@ $('#sidebar-button').click(function() {
         }, 300);
     }
 });
-
-  // QUESTION 7
 
   //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
 $('.page-wrapper').click(function(){
@@ -59,7 +58,7 @@ $("#overlay").click(function() {
     $("#season-img").css("max-height", "750px")
   });
 
-/* for moving to different sections and closing side nav */
+// for moving to different sections and closing side nav //
 $("a").click(function(){
   $('body').removeClass('no-scroll');
   $("html, body").animate({
