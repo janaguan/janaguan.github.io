@@ -12,6 +12,10 @@ a{
 	text-decoration: none;
 }
 
+/*whole container*/
+#container{
+}
+
 /* Sidebar container and the things in it */
 .sidebar-container{
 	position: fixed;
@@ -150,7 +154,7 @@ a{
 	text-align: -webkit-center;
 	font-weight: 500;
 	color: #ffffff;
-	font-size: 120px;
+	font-size: 110px;
 	padding: 16%;
 	padding-left: 20%;
 }
@@ -163,8 +167,8 @@ a{
 	text-align: -webkit-center;
 	font-weight: 500;
 	color: #ffffff;
-	font-size: 200px;
-	padding: 11%;
+	font-size: 180px;
+	padding: 13%;
 	padding-left: 20%;
 	transition: opacity 5s ease-in;
 }
@@ -186,7 +190,7 @@ a{
 #blurb{
 	color: #4B5354;
 	text-align: center;
-	padding-left: 6%;
+	padding-left: 1%;
 	line-height: 2;
 	font-weight: 800;
 }
@@ -196,8 +200,8 @@ a{
     width: auto;
     max-width: 350px;
     max-height: 350px;
-    margin-left: 30%;
-    margin-top: 17%;
+    margin-left: 21%;
+    margin-top: 18%;
     border-radius: 30px;
 }
 /*portfolio section */
@@ -255,7 +259,7 @@ p{
 	max-width: 650px;
 	line-height: 2;
 	text-align: center;
-	padding-left: 10%;
+	padding-left: 9%;
     padding-bottom: 1%;
 }
 
@@ -285,9 +289,9 @@ p{
 
 .small-ver{
 	display: inline;
-	max-width: 100px;
-	max-height: 100px;
-	padding-left: 1.1%;
+	max-width: 80px;
+	max-height: 80px;
+	padding-left: 1%;
 }
 
 #snippet{
@@ -297,10 +301,10 @@ p{
 #season-img {
 	float: left;
 	clear: left;
-    max-width: 800px;
-    max-height: 750px;
+    max-width: 600px;
+    max-height: 600px;
     padding-top: 4%;
-    padding-left: 3%;
+    padding-left: 4%;
 }
 
 #season-img:hover{
@@ -311,7 +315,7 @@ p{
 	float: right;
 	color: #4B5354;
 	padding-top: 1%;
-	padding-right: 3%;
+	padding-right: 5%;
 	max-width: 500px;
 	line-height: 1.9;
 	text-align: center;
@@ -382,7 +386,7 @@ p{
 	float: left;
 	padding: 3%;
 	margin-right: 1%;
-	margin-left: 9%;
+	margin-left: 8%;
 	font-weight: 800;
 	font-size: 15px;
 }
@@ -420,4 +424,42 @@ p{
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	-o-transform: translateX(0px);
+}
+
+@media (max-width: 800){
+#hi{
+	font-size: 120px;
+}
+
+#name{
+	font-size: 180px;
+}	
+
+#myself-img{
+	margin-left: 18%;
+
+}
+
+#blurb{
+	padding-left: none;
+}
+
+#bakery-blurb{
+	padding-left: 5%;
+}
+
+#snippet{
+	max-width: 80px;
+	max-height: 80px;
+	padding-left: .5%;
+	padding-top: 5%;
+}
+
+#season-img{
+	max-height: 750px;
+	max-width: 700px;
+	padding-left: 1%;
+	padding-top: 4%;
+}
+
 }
