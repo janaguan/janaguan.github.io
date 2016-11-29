@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+$("#hi").fadeOut(3000);
+$("#name").addClass("appear")
+
+
   //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
 $('#sidebar-button').click(function() {
   if ($("#sidebar-button").hasClass("button-active")) {
@@ -33,6 +37,7 @@ $(".bakery").click(function() {
     $(this).addClass("bakery-pic-click");
     $(this).addClass("height-width");
     $('body').addClass('no-scroll');
+    $("#back-page").css("padding-left", "none")
   });
 
 $("#overlay").click(function() {
@@ -56,6 +61,20 @@ $("#overlay").click(function() {
     $('body').removeClass('no-scroll');
     $("#season-img").css("max-width", "800px")
     $("#season-img").css("max-height", "750px")
+  });
+
+$(".small-ver").click(function(){
+    $("#overlay").show();
+    $(this).addClass("snippet-pic-click");
+    $(this).addClass("height-width");
+    $('body').addClass('no-scroll');
+});
+
+$("#overlay").click(function() {
+    $("#snippet").hide();
+    $(".small-ver").removeClass("bakery-pic-click");
+    $(".small-ver").removeClass("height-width");
+    $('body').removeClass('no-scroll');
   });
 
 // for moving to different sections and closing side nav //

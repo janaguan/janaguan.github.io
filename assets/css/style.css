@@ -8,7 +8,7 @@ body, html{
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	background-color: #4B5354;
 }
 
@@ -121,21 +121,47 @@ a{
 }
 
 .home-section{
+	position: relative;
 	width: 100%;
 	height: 600px;
 	position: relative;
 	background-color: #A1C1BE;
 }
 
+#hi{
+	position: absolute;
+	z-index: 2;
+	opacity: 1;
+	text-align: -webkit-center;
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 120px;
+	padding: 16%;
+	padding-left: 20%;
+}
+
+#hi.disappear{
+	opacity: 0;
+}
+
 #name{
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
 	font-family: 'Arizonia', cursive;
 	text-align: -webkit-center;
 	font-weight: 500;
 	color: #ffffff;
 	font-size: 200px;
 	padding: 11%;
-	padding-left: 15%;
+	padding-left: 20%;
+	transition: opacity 5s ease-in;
 }
+
+#name.appear{
+	opacity: 1;
+}
+
 
 #aboutme-section{
 	background-color: #F3F4E5;
@@ -151,6 +177,7 @@ a{
 	text-align: center;
 	padding-left: 6%;
 	line-height: 2;
+	font-weight: 800;
 }
 
 #myself-img{
@@ -195,8 +222,6 @@ p{
     width: auto; 
     max-width: 330px; 
     max-height: 300px;
-    padding-left: 10%;
-    padding-bottom: 1%;
 }
 
 .bakery:hover{
@@ -206,7 +231,7 @@ p{
 #bakery-descrip{
 	padding-left: 0%;
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 500;
 	max-width: 700px;
 	line-height: 0.5;
 	margin-top: 2%;
@@ -219,16 +244,18 @@ p{
 	max-width: 650px;
 	line-height: 2;
 	text-align: center;
-}
-
-#front-page{
-	padding-top: 4%;
-    padding-left: 7%;
+	padding-left: 10%;
     padding-bottom: 1%;
 }
 
+#front-page{
+	padding-top: 3%;
+    padding-left: 9%;
+}
+
 #back-page{
-	padding-left: 13%;
+    padding-top: 2%;
+	padding-left: 9%;
 }
 
 /*seasons section*/
@@ -242,19 +269,17 @@ p{
 	font-weight: 500;
 	text-align: right;
 	font-size: 100px;
-	padding-top: 2%;
 	padding-right: 20%;
 }
 
 .small-ver{
-	margin-left: 2.5%;
-
-}
-#snippet{
+	display: inline;
 	max-width: 100px;
 	max-height: 100px;
-	float:left;
-	padding-left: 1%;
+	padding-left: 1.1%;
+}
+
+#snippet{
 	padding-top: 10%;
 }
 
@@ -271,20 +296,23 @@ p{
 	cursor: pointer;
 }
 
-#season-blurb{
+.season-blurb{
+	float: right;
 	color: #4B5354;
-	padding-left: 5%;
+	padding-top: 1%;
+	padding-right: 3%;
 	max-width: 500px;
 	line-height: 1.9;
-	padding-left: 62%;
 	text-align: center;
+	font-weight: 800;
 }
 
 #season-descrip{
-	padding-left: 0%;
+	padding-top: 1%;
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 500;
 	max-width: 500px;
+	line-height: 1.1;
 }
 
 #overlay {
@@ -312,11 +340,12 @@ p{
 }
 
 .bakery-pic-click {
+	margin-left: none;
 	position: fixed;
 	z-index: 21;
 	width: 80%;
-	top: 7%;
-	left: 5%;
+	top: 1%;
+	left: 1%;
 }
 
 .season-pic-click {
@@ -324,15 +353,7 @@ p{
 	z-index: 21;
 	width: 80%;
 	top: 30%;
-	left: 12%;
-}
-
-.small-ver-pic-click{
-	position: fixed;
-	z-index: 21;
-	width: 80%;
-	top: 7%;
-	left: 5%;
+	left: 8%;
 }
 
 /*chat section */
