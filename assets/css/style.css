@@ -308,7 +308,7 @@ p{
 }
 
 #season-descrip{
-	padding-top: 1%;
+	padding-top: 1.5%;
 	font-size: 15px;
 	font-weight: 500;
 	max-width: 500px;
@@ -379,6 +379,7 @@ p{
 .contact-link:hover{
 	color: #A1C1BE;
 	transition: 0.2s;
+	cursor: pointer;
 }
 
 .height-width{
