@@ -63,20 +63,6 @@ $("#overlay").click(function() {
     $("#season-img").css("max-height", "750px")
   });
 
-$(".small-ver").click(function(){
-    $("#overlay").show();
-    $(this).addClass("snippet-pic-click");
-    $(this).addClass("height-width");
-    $('body').addClass('no-scroll');
-});
-
-$("#overlay").click(function() {
-    $("#snippet").hide();
-    $(".small-ver").removeClass("bakery-pic-click");
-    $(".small-ver").removeClass("height-width");
-    $('body').removeClass('no-scroll');
-  });
-
 // for moving to different sections and closing side nav //
 $("a").click(function(){
   $('body').removeClass('no-scroll');

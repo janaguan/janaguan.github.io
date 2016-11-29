@@ -3,11 +3,7 @@ body, html{
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	min-width: 960px;
 	background-color: white;
-	-webkit-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 	font-family: 'Quicksand', sans-serif;
 	background-color: #4B5354;
 }
@@ -19,11 +15,11 @@ a{
 /* Sidebar container and the things in it */
 .sidebar-container{
 	position: fixed;
+	z-index: 2;
+	opacity: 0.9;
 	width: 280px;
 	height: 100%;
 	background-color: #4B5354;
-	z-index: 2;
-	opacity: 0.9;
 	-webkit-transform: translateX(-280px);
 	-webkit-transition: all 0.3s;
 	-moz-transform: translateX(-280px);
@@ -60,15 +56,34 @@ a{
 /* nav bar button */
 #nav-mover { 
 	position: absolute; 
-	left: 50%; top: 50%; 
-	z-index: 10;
+	left: 50%;
+	top: 50%; 
+	z-index: 15;
 }
 
 #nav-mover {
 	padding: 10px 30px 15px 0px; 
 }
 
-#nav-mover span, #nav-mover span:before, #nav-mover span:after {
+#nav-mover span{
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-mover span:before{
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';	
+}
+
+#nav-mover span:after{
 	height: 3px;
 	width: 30px;
 	background: #fff;
@@ -138,10 +153,6 @@ a{
 	font-size: 120px;
 	padding: 16%;
 	padding-left: 20%;
-}
-
-#hi.disappear{
-	opacity: 0;
 }
 
 #name{
@@ -342,7 +353,7 @@ p{
 .bakery-pic-click {
 	margin-left: none;
 	position: fixed;
-	z-index: 21;
+	z-index: 200;
 	width: 80%;
 	top: 1%;
 	left: 1%;
@@ -350,7 +361,7 @@ p{
 
 .season-pic-click {
 	position: fixed;
-	z-index: 21;
+	z-index: 200;
 	width: 80%;
 	top: 30%;
 	left: 8%;
