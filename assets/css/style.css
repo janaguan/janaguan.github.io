@@ -389,7 +389,9 @@ p{
 
 .contact-link:hover{
 	color: #A1C1BE;
-	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
 	cursor: pointer;
 }
 

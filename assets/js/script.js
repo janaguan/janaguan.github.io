@@ -11,7 +11,7 @@ $('#sidebar-button').click(function() {
     $('#sidebar-button').removeClass('button-active');
     $('.sidebar-container').removeClass('sidebar-active');
     $('.page-wrapper').removeClass('wrapper-active');
-  } else {
+  }else {
       $('#sidebar-button').addClass('button-active');
       $('.sidebar-container').addClass('sidebar-active');
       $('.page-wrapper').addClass('wrapper-active');
