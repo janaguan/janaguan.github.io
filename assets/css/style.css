@@ -304,7 +304,7 @@ p{
     max-width: 600px;
     max-height: 600px;
     padding-top: 4%;
-    padding-left: 4%;
+    padding-left: 5%;
 }
 
 #season-img:hover{
@@ -445,7 +445,7 @@ p{
 }
 
 #bakery-blurb{
-	padding-left: 5%;
+	padding-left: 1%;
 }
 
 #snippet{
@@ -461,5 +461,4 @@ p{
 	padding-left: 1%;
 	padding-top: 4%;
 }
-
 }
